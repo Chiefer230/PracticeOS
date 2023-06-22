@@ -1,5 +1,5 @@
 OUTPUT_FORMAT("elf64-x86-64")
-ENTRY(START)
+ENTRY(start)
 SECTIONS
 {
     . = 0x200000;

@@ -96,8 +96,16 @@ InitPIC:
     retf
 
 KernelEntry:
-    mov rsp, 0x2000000
+    xor ax,ax
+    mov ss,ax
+    
+    
+    mov rsp, 0x200000
+    
+    
+    
     call Kmain
+    sti
    
 end:
     hlt
